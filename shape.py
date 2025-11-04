@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Shape:
+class Shape(ABC):
     @abstractmethod
     def area(self):
         pass
@@ -14,7 +14,7 @@ class Rectangle(Shape):
         return self.width * self.height
     
 
-class circle(Shape):
+class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
 
@@ -28,3 +28,9 @@ class Square(Shape):
 
     def area(self):
         return self.sidelength ** 2
+
+
+a = Rectangle(10, 5)
+b = Circle(5)
+c = Square(5)
+
