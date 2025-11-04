@@ -8,10 +8,11 @@ class Vehicle:
         print (f'the max speed of {self.brand}{self.model} is {self.max_speed}')
 
 class Car(Vehicle):
-    def drive(self):
-        return super().drive()
+    pass
 
 class Motorcycle(Vehicle):
-    def drive(self):
-        return super().drive()
+    pass
+
+
+
 
